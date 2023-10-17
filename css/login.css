@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #b34b4b;
+}
+
+.header {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.header h2 {
+    margin: 5px;
+    color: white;
+    margin-right: auto
+}
+
+.Login {
+    margin-top: 5px;
+    margin-left: 18px;
+    color: white;
+    padding: 10px;
+    background: transparent;
+    border: 3px solid white;
+    border-radius: 8px;
+    transition: .5s;
+}
+
+.page {
+    border: 5px solid gray;
+    border-radius: 20px;
+    background-color: gray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 230px;
+    animation-name: dim;
+    animation-duration: 1s;
+    box-shadow: 0 0 15px rgba(246, 249, 208, 0.6);
+}
+
+.page h2 {
+    text-align: center;
+    margin-top: 5px;
+    color: white;
+}
+
+.page button {
+    position: absolute;
+    left: 50%;
+    color: white;
+    transform: translate(-50%);
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 10px;
+    transition: .5s;
+}
+
+.page button:hover {
+    background-color: white;
+    color: black;
+}
+
+.page input {
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.page label {
+    margin-left: 25px;
+    color: white;
+}
+
+@keyframes dim {
+    from {
+        border-color: transparent;
+        color: transparent;
+        background-color: transparent;
+    }
+}
+
+.Login:hover {
+    color: black;
+    background-color: white;
+}
